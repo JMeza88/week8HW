@@ -78,7 +78,17 @@ $('.card').click(function(){
         var $firstCard = $(event.target).html();
         firstCard = $firstCard;
         console.log(firstCard);
-      };
+      } else if (secondCard === null) {
+      var $secondCard = $(event.target).html();
+        secondCard = $secondCard;
+        console.log(secondCard);
+
+  };
+
+
+  if (firstCard === secondCard){
+     alert("You are the winner");
+  }
 
 });
 
